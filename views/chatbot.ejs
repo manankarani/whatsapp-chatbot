@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <title>WhatsBulker Chatbot</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/chatbot.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse" style="background-color: rgb(30, 30, 40); padding: 0; display: block">
+        <img class="navbar-brand" src="/img/logo.png" class="rounded d-block" alt="Wikipedia font title" height="70" />
+        <form id="logoutfromall" action="/users/logout" style="float: right; padding: 5px">
+            <div class="line" style="display: inline-flex">
+                <h6 style="color: #25d366">Hi <%= name %>
+                </h6>
+                <button class="logout-btn btn btn-dark" type="submit" id="logout">
+                    Logout
+                </button>
+            </div>
+        </form>
+    </nav>
+    <div class="main">
+        <h3>Scan the QR Code to login to WhatsBulker Chatbot Service</h3>
+        <br />
+        <br />
+        <div class="text p-5">
+            1. Open Whatsapp on your phone
+            <br />
+            2. Tap <b>Menu</b> or <b>Settings</b> and select <b>Linked Devices</b>
+            <br />
+            3. Point your phone to this screen.
+        </div>
+        <div class="qr-div">
+            <img id="qrimage" class="qr" src="" alt="QR" />
+        </div>
+    </div>
+
+    <div class="main-2">
+        <div class="demo-wrapper">
+            <div class="svg-wrapper">
+                <svg class="svg" version="1.1" id="tick" viewBox="6 5 26 26">
+                    <polyline class="path" points="
+        11.6,20 15.9,24.2 26.4,13.8 " />
+                </svg>
+            </div>
+        </div>
+        <h3>You are logged in!</h3>
+        <div class="logchat">
+            <form action="/logoutchatbot" method="POST">
+                <button class="logout-btn btn btn-dark" type="submit" id="logout">
+                    Logout from Chatbot
+                </button>
+                <a href="../data/data.xlsx" class="return-btn btn btn-dark ackno">Download Data</a>
+            </form>
+        </div>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script defer src="/js/chatbot.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    background: rgb(43, 43, 70);
+    padding-top: 0 !important;
+  }
+.logout-btn {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    background: #e04747;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-weight: 500;
+  }
+  .logout-btn:hover {
+    background: #d32525;
+  }
+
+.submit-btn {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    float: right;
+    width: 40%;
+    background: #128c7e;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: 20px;
+    font-weight: 400;
+  }
+.submit-btn:hover {
+    background: #25d366;
+  }

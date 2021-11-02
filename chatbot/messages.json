@@ -1,0 +1,38 @@
+{
+    "hi": "Welcome to Manan's Chatbot",
+    "menu": {
+        "message": "1) Contact Manan\n2) Read Instructions\n3) Request Demo\n4)Get Location",
+        "1": {
+            "message": "!sendVcard,0000000000,Manan Karani"
+
+        },
+        "2": {
+            "message": "Which Instructions ? \n1) Chatbot \n2) Bulk Messanger",
+            "1":{"message":"Instructions\n\n1. Open Whatsapp on your phone\n2. Tap Menu or Settings and select Linked Devices\n3. Point your phone to this screen."},
+            "2":{"message":"Instructions\n\n1. Open Whatsapp on your phone\n2. Tap Menu or Settings and select Linked Devices\n3. Point your phone to this screen. \n4. Go to whatsbulker.herokuapp.com/bulker and write message and send"}
+        },
+        "3": {
+            "entryData": true,
+            "message": "Enter Your Details",
+            "name": {
+                "message": "Enter Name",
+                "saveData":true
+            },
+            "email": {
+                "message": "Enter Email",
+                "saveData":true
+            },
+            "phone": {
+                "message": "Enter Phone Number",
+                "saveData":true
+            },
+            "message-saved": {
+                "message": "Thanks for your request. We will get back to you soon.",
+                "saveData":true
+            }
+        },
+        "4": {
+            "message": "!sendLocation,19.071814878886524,72.87568213996947,Mumbai"
+        }
+    }
+}
