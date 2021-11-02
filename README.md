@@ -5,11 +5,12 @@ This application uses 🕷[Venom Bot](https://github.com/orkestral/venom)🕸
 One can simply edit the `messages.json` to change the structure of the Chatbot 
 
 ## Messages Json Example
-Edit `messages.json` with the format below.
-* Hi - [x] Necessary
-* Menu - [x] Necessary
-     * 1 - Can have a nested object with `message` key
-     * 2 - Can have a nested object with `message` key
+Edit `messages.json` with the format below. 
+>`message` key is compulsory for every level of nesting. 
+>* Hi (_Necessary_)
+>* Menu (_Necessary_)
+>     * 1 - Can have a nested object with `message` key (_Not Necessary_)
+>     * 2 - Can have a nested object with `message` key (_Not Necessary_)
 ```json
 {
     "hi": "Welcome to Manan's Chatbot",      
