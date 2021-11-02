@@ -9,7 +9,7 @@
         "2": {
             "message": "Which Instructions ? \n1) Chatbot \n2) Bulk Messanger",
             "1":{"message":"Instructions\n\n1. Open Whatsapp on your phone\n2. Tap Menu or Settings and select Linked Devices\n3. Point your phone to this screen."},
-            "2":{"message":"Instructions\n\n1. Open Whatsapp on your phone\n2. Tap Menu or Settings and select Linked Devices\n3. Point your phone to this screen. \n4. Go to whatsbulker.herokuapp.com/bulker and write message and send"}
+            "2":{"message":"Instructions\n\n1. Open Whatsapp on your phone\n2. Tap Menu or Settings and select Linked Devices\n3. Point your phone to this screen. \n4. Go to bulker and write message and send"}
         },
         "3": {
             "entryData": true,
