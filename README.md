@@ -2,7 +2,7 @@
 This is a nodejs application, which starts a chatbot and can be modified by changing the JSON file. 
 This application uses 🕷[Venom Bot](https://github.com/orkestral/venom)🕸
 
-One can simply edit the `messages.json` to change the structure of the Chatbot 
+One can simply edit the [`messages.json`](https://github.com/manankarani/whatsapp-chatbot/blob/main/chatbot/messages.json) to change the structure of the Chatbot 
 
 ## Messages Json Example
 Edit `messages.json` with the format below. 
