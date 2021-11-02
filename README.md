@@ -5,36 +5,38 @@ This application uses 🕷[Venom Bot](https://github.com/orkestral/venom)🕸
 One can simply edit the `messages.json` to change the structure of the Chatbot 
 
 ## Messages Json Example
-Please remove comments before using.
+Edit `messages.json` with the format below.
+* Hi - [x] Necessary
+* Menu - [x] Necessary
+     * 1 - Can have a nested object with `message` key
+     * 2 - Can have a nested object with `message` key
 ```json
 {
-    "hi": "Welcome to Manan's Chatbot",      //required
-    "menu": {                                //required
-        "message": "1) msg1\n2)msg2\n3)msg3",//can have more messages
+    "hi": "Welcome to Manan's Chatbot",      
+    "menu": {                                
+        "message": "1) msg1\n2)msg2\n3)msg3",
         "1": {
-            "message": "!sendVcard,0000000000,Manan Karani"
-                                             //can send contactCards 
-                                             //and location with "!sendLocation"
+            "message": "!sendVcard,0000000000,NAME"
         },
         "2": {
             "message": "msg_main2",
             "1":{"message":"msg1"},
-            "2":{"message":"msg2"}           //can have more depth
+            "2":{"message":"msg2"}           
         },
         "3": {
-            "entryData": true,               //use entryData: true to handle data inputs
+            "entryData": true,               
             "message": "Enter Your Details",
             "name": {
                 "message": "Enter Name",
-                "saveData":true              //this will save previous data i.e. "3"
+                "saveData":true              
             },
             "email": {
                 "message": "Enter Email",
-                "saveData":true              //this will save previous data i.e. "name"
+                "saveData":true              
             },
-            "message-saved": {               //after end send this
+            "message-saved": {               
                 "message": "Thanks",
-                "saveData":true              //this will save previous data i.e. "email"
+                "saveData":true              
             }
         }
     }
